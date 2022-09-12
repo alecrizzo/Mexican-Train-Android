@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="85dp"
+    android:layout_height="75dp"
+    android:orientation="horizontal"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <ImageView
+        android:id="@+id/tileImageView"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        android:rotation="-90"
+        app:srcCompat="@drawable/d0_0" />
+</LinearLayout>

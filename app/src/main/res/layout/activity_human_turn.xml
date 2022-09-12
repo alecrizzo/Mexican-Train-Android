@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HumanTurnActivity">
+
+    <TextView
+        android:id="@+id/turnHumanOrphanText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="140dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView5"
+        app:layout_constraintEnd_toStartOf="@+id/turnTurnText"
+        app:layout_constraintTop_toBottomOf="@+id/turnConsoleText"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <TextView
+        android:id="@+id/turnHumanHandText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnMexicanTrainText"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView4"
+        android:layout_width="632dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="12dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView3"
+        app:layout_constraintVertical_bias="0.079">
+
+        <LinearLayout
+            android:id="@+id/turnHumanHandLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/turnButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/turnButton3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/turnButton1" />
+
+    <Button
+        android:id="@+id/turnButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/turnButton2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/turnButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/turnButton2" />
+
+    <TextView
+        android:id="@+id/turnConsoleText"
+        android:layout_width="414dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/turnRoundNumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnConsoleText" />
+
+    <TextView
+        android:id="@+id/turnTurnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnConsoleText" />
+
+    <ImageView
+        android:id="@+id/turnImageEngine"
+        android:layout_width="33dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnConsoleText"
+        app:layout_constraintVertical_bias="0.178"
+        app:srcCompat="@drawable/d0_0" />
+
+    <ImageView
+        android:id="@+id/turnImageBoneyard"
+        android:layout_width="85dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="4dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toStartOf="@+id/turnConsoleText"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d0_0" />
+
+    <HorizontalScrollView
+        android:id="@+id/turnComputerTrainScrollView"
+        android:layout_width="344dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="52dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView3"
+        app:layout_constraintEnd_toStartOf="@+id/turnImageEngine"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnConsoleText"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/turnComputerTrainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView5"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/turnImageEngine"
+        app:layout_constraintTop_toBottomOf="@+id/turnConsoleText"
+        app:layout_constraintVertical_bias="0.787">
+
+        <LinearLayout
+            android:id="@+id/turnHumanTrainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
+        android:layout_width="632dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnImageEngine"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/turnMexicanTrainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/turnMexicanTrainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnRoundNumText"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <TextView
+        android:id="@+id/turnComputerScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/turnButton1"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959" />
+
+    <TextView
+        android:id="@+id/turnHumanScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/turnButton3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959" />
+
+    <TextView
+        android:id="@+id/turnComputerOrphanText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        app:layout_constraintBottom_toTopOf="@+id/turnComputerTrainScrollView"
+        app:layout_constraintStart_toEndOf="@+id/turnRoundNumText"
+        app:layout_constraintTop_toBottomOf="@+id/turnConsoleText"
+        app:layout_constraintVertical_bias="0.303" />
+
+    <TextView
+        android:id="@+id/turnBoneyardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/turnRoundNumText"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/turnImageBoneyard"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/turnHumanMarkerText"
+        android:layout_width="1dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/turnButton3"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/turnButton2" />
+
+    <TextView
+        android:id="@+id/turnComputerMarkerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/turnButton2"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/turnButton1" />
+
+    <Button
+        android:id="@+id/turnContinueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
